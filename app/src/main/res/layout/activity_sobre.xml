@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paulo Roberto Brandao da Silva"
+        android:text="Leandro F. Ruiz"
         android:layout_gravity="center"
         android:layout_marginVertical="32dp"
         >
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RM85491"
+        android:text="RM85045"
         android:layout_gravity="center"
         android:layout_marginVertical="32dp"
         >
