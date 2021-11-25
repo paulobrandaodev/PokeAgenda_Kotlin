@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             consultarPokemon(binding.busca.text.toString())
         }
 
+        binding.btLimpar.setOnClickListener {
+            var txt  = ""
+            binding.busca.setText(txt)
+        }
+
         Glide.with(getApplicationContext()).load("https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png")
             .into(binding.imagemPokemon)
 
