@@ -1,9 +1,12 @@
 package com.example.pokedex
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import com.bumptech.glide.Glide
 import com.example.pokedex.databinding.ActivityMainBinding
 import com.example.pokedex.model.Pokemon
@@ -27,8 +30,21 @@ class MainActivity : AppCompatActivity() {
             consultarPokemon(binding.busca.text.toString())
         }
 
-        Glide.with(getApplicationContext()).load("https://media3.giphy.com/media/gHc8UzazY7b0hPfZLJ/giphy.gif")
+        Glide.with(getApplicationContext()).load("https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png")
             .into(binding.imagemPokemon)
+
+        var btnAbrirSiteFiap:Button = findViewById<Button>(R.id.btAbrirSiteFIAP)
+        var btnAbrirSobre:Button = findViewById<Button>(R.id.btAbrirSobre)
+
+        btnAbrirSiteFiap.setOnClickListener {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.fiap.com.br/graduacao/tecnologo/jogos-digitais/"))
+            startActivity(i)
+        }
+
+        btnAbrirSobre.setOnClickListener {
+            val i = Intent(this, Sobre::class.java)
+            startActivity(i)
+        }
     }
 
     fun consultarPokemon(pokemon:String){
