@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/busca"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Digite aqui..."
+        android:inputType="text"
+        android:layout_marginVertical="32dp"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/inputId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="charizard"
+        android:layout_gravity="center"
+        android:layout_marginVertical="32dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/inputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="charizard"
+        android:layout_gravity="center"
+        android:layout_marginVertical="32dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imagemPokemon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+    <Button
+        android:id="@+id/btPesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        android:layout_gravity="center"
+        android:layout_marginVertical="32dp"
+        >
+    </Button>
+
+
+
+
+</LinearLayout>
